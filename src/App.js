@@ -9,7 +9,7 @@ export default class App extends React.Component {
         return(
             <View style={styles.container}>
                 <Simples texto='Flexivel!!!!'/>
-                <ParImpar numero={28}/>
+                <ParImpar numero={27}/>
             </View>
         );
     }
