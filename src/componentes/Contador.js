@@ -24,7 +24,7 @@ export default class Contador extends Component {
             <View>
                 <Text style={{ fontSize: 40 }}>{this.state.numero}</Text>
                 <TouchableHighlight
-                    onPress={this.maisUm}
+                    onPress={() => this.maisUm()}
                     onLongPress={this.limpar}>
                     <Text>Incrementar/Zerar</Text>
                 </TouchableHighlight>
