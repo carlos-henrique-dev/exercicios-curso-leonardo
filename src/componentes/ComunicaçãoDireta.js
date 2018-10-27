@@ -17,7 +17,7 @@ export const Pai = props =>
     <View>
         <Text {...fonte}> Pai: {props.nome} {props.sobrenome}</Text>
         {/* {props.children} */}
-        {filhosComProps(props)}
+        {filhosComProps(props )}
     </View>
 
 export const Avo = props =>
