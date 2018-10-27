@@ -11,9 +11,13 @@ import Evento from './componentes/Evento';
 import { Avo } from './componentes/ComunicaçãoDireta';
 import TextoSincronizado from './componentes/ComunicacaoIndireta';
 import ListaFlex from './componentes/ListaFlex';
+import Flex from './componentes/Flex';
 
 
 export default createDrawerNavigator({
+    Flex: {
+        screen: Flex
+    },
     ListaFlex:{
         screen: ListaFlex,
         navigationOptions: { title: 'Lista (Flex Box)' }
