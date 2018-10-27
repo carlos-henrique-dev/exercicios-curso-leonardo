@@ -4,8 +4,12 @@ import { createDrawerNavigator } from 'react-navigation';
 import Simples from './componentes/Simples';
 import ParImpar from './componentes/ParImpar';
 import { Inverter, MegaSena } from './componentes/Multi';
+import Contador from './componentes/Contador';
 
 export default createDrawerNavigator({
+    Contador: {
+        screen: () => <Contador/>
+    },
     MegaSena: {
         screen: () => <MegaSena numero={8} />,
         navigationOptions: { title: 'Mega Sena' }
@@ -14,7 +18,7 @@ export default createDrawerNavigator({
         screen: () => <Inverter texto='React Nativo!' />
     },
     ParImpar: {
-        screen: () => <ParImpar numer={30} />,
+        screen: () => <ParImpar numero={30} />,
         navigationOptions: { title: 'Par & Impar' }
     },
     Simples: {
@@ -22,5 +26,5 @@ export default createDrawerNavigator({
     }
 },
     {
-        drawerWidht: 300
+        drawerWidth: 300
     })
